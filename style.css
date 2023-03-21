@@ -12,17 +12,35 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-#wrapper {
+#container {
     display: grid;
-    border: 1px solid red;
-    grid-gap: 5px;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 0.3fr 1.5fr 1.75fr 0.5fr;
+    grid-gap: 0.25rem;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "main main main main"
+    "content content content ";
 }
 
-.header, .footer {
-    background-color: black;
-    color: white;
+.header {
+    background-color: #d1f2eb;
 }
 
-.content {
-    background-color: aqua;
+.nav {
+    background-color: #76d7c4;
+}
+
+.main {
+    background-color: #1abc9c;
+}
+
+.card1 {
+    background-color: #e5e7e9;
+}
+
+.footer {
+    background-color: #148f77;
 }

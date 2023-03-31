@@ -119,6 +119,7 @@
     font-size: 0.75rem;
     color: var(--sub-header-font-color);
     line-height: 80%;
+    font-style: italic;
 }
 
 /*** Cards ***/

@@ -30,7 +30,8 @@ h4 {
 
 a, 
 p, 
-ul, 
+ul,
+ol, 
 button {
     font-family: var(--font-family);
     font-size: 1rem;
@@ -44,6 +45,11 @@ button {
 .header {
     height: 8rem;
     box-shadow: 0 8px 5px -5px var(--box-shadow-color); 
+}
+
+.header,
+.footer {
+    background-color: var(--background-color);
 }
 
 .header-wrapper,
@@ -107,6 +113,7 @@ transition: 0.5s;
 .form-input {
     height: 3rem;
     width: 20rem;
+    padding-left: 1rem;
     border: 2px solid var(--btn-color);
 }
 

@@ -2,38 +2,96 @@
 @import url(../css_files/variables.css);
 
 
-#container {
+.wrapper {
     display: grid;
-    height: 100vh;
-    grid-template-rows: 1fr 0.3fr 1fr 1.75fr 0.5fr;
+    width: 65%;
+    border: 1px solid red;
+    margin: auto;
+    grid-template-rows: 0.1fr 1fr 0.25fr;
     grid-gap: 0.25rem;
     grid-template-areas: 
-    "header"
-    "nav"
-    "topic"
+    "sub-nav"
     "content"
-    "footer";
+    "author";
 }
 
-.header {
-    grid-area: header;
-}
-
-.nav {
-    grid-area: nav;
-}
-
-.topic {
-    background-color: #1abc9c;
-    grid-area: topic;
+.sub-nav {
+    grid-area: sub-nav;
 }
 
 .content {
-    background-color: #e5e7e9;
     grid-area: content;
 }
 
-/*** Footer Section ***/
+.author {
+    grid-area: author;
+}
+
+/*** Sub Navigation ***/
+.sub-nav > p,
+.img-credit,
+.img-credit a {
+    font-size: 0.9rem;font-style: italic;
+    color: var(--sub-header-font-color);
+}
+
+/*** Content ***/
+.content {
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "top top"
+    "middle quote"
+    "img2 img2"
+    "img3 img3";
+}
+
+.top {
+    grid-area: top;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.img-credit a:hover {
+    text-decoration: underline;
+}
+
+
+.middle {
+    grid-area: middle;
+    border: 1px solid green;
+}
+
+.quote {
+    grid-area: quote;
+    border: 1px solid purple
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.content-list {
+    line-height: 2rem;
+    width: 45rem;
+    margin:auto;
+}
+
+.img3 {
+    grid-area: img3
+}
+
+
+/*** Footer ***/
 .footer {
     display: flex;
     height: 20rem;

@@ -21,11 +21,17 @@ ul {
     margin: 0;
 }
 
-h1, h2, h3, h4 {
+h1, 
+h2, 
+h3, 
+h4 {
     font-family: var(--heading-font-family);
 }
 
-a, p, ul, button {
+a, 
+p, 
+ul, 
+button {
     font-family: var(--font-family);
     font-size: 1rem;
 }
@@ -52,6 +58,7 @@ a, p, ul, button {
 .header-wrapper-name {
     width: 33%;
 }
+
 
 .blog-name {
     font-size: 2rem;

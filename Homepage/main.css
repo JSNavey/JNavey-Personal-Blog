@@ -33,7 +33,7 @@ a, p, ul, button {
     font-size: 1rem;
 }
 
-.container {
+#container {
     height: 100vh;
     width: 100vw;
 }

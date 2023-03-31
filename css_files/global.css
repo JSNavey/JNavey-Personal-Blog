@@ -103,3 +103,14 @@ transition: 0.5s;
     background-color: var(--btn-color);
     color: var(--white);
 }
+
+.form-input {
+    height: 3rem;
+    width: 20rem;
+    border: 2px solid var(--btn-color);
+}
+
+.form-input:focus {
+    box-shadow: 0 0 10px var(--btn-color);
+    outline: var(--btn-color);
+}

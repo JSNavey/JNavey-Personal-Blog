@@ -170,34 +170,6 @@
     flex-direction: column;
 }
 
-
-
-
-/*** About Me Section ***/
-/*
-.about-me-header {
-    grid-area: about-me-header;
-    margin: auto;
-}
-
-#about-me {
-    grid-area: about-me;
-    height: 20rem;
-    width: auto;
-    display: flex;
-}
-
-.about-me-text {
-    padding: 1.5rem;
-    margin: 0;
-}
-
-.about-me-img {
-    height: auto;
-    max-width: 100%;
-    border-radius: 50%;
-}*/
-
 /*** Footer Section ***/
 .footer {
     display: flex;
@@ -232,16 +204,6 @@
     align-items: center;
 }
 
-.form-input {
-    height: 3rem;
-    width: 20rem;
-    border: 2px solid var(--btn-color);
-}
-
-.form-input:focus {
-    box-shadow: 0 0 10px var(--btn-color);
-    outline: var(--btn-color);
-}
 
 
 /* 

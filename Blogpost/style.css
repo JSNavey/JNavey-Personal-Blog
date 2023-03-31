@@ -31,7 +31,8 @@
 .sub-nav > p,
 .img-credit,
 .img-credit a {
-    font-size: 0.9rem;font-style: italic;
+    font-size: 0.9rem;
+    font-style: italic;
     color: var(--sub-header-font-color);
 }
 

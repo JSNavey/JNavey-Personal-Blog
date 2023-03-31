@@ -10,15 +10,13 @@
     margin: auto;
     padding-top: 5rem;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.1fr 1fr 0.1fr 0.5fr 0.1fr 0.5fr ;
+    grid-template-rows: 0.1fr 1fr 0.1fr 0.5fr;
     grid-gap: 2rem;
     grid-template-areas: 
     "main-header main-header main-header main-header"
     "main main main main"
     "card-header card-header card-header card-header"
-    "home food gardening kid"
-    "recipe-header recipe-header recipe-header recipe-header"
-    "recipe1 recipe2 recipe3 recipe4";
+    "home food gardening kid";
 }
 
 .main-header {
@@ -27,11 +25,6 @@
 
 .card-header {
     grid-area: card-header;
-}
-
-.recipe-header {
-    grid-area: recipe-header;
-    padding-top: 2rem;
 }
 
 .home {
@@ -48,22 +41,6 @@
 
 .kid {
     grid-area: kid;
-}
-
-.recipe1 {
-    grid-area: recipe1;
-}
-
-.recipe2 {
-    grid-area: recipe2;
-}
-
-.recipe3 {
-    grid-area: recipe3;
-}
-
-.recipe4 {
-    grid-area: recipe4;
 }
 
 .main-header,
@@ -116,10 +93,12 @@
 }
 
 .trending-credit {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     color: var(--sub-header-font-color);
-    line-height: 80%;
     font-style: italic;
+    line-height: 80%;
+    margin-top: 0.3rem;
+
 }
 
 /*** Cards ***/
@@ -177,7 +156,6 @@
     height: 20rem;
     justify-content: space-around;
     padding-bottom: 4rem;
-    background-color: #edf1f4;
     box-shadow: 0 -5px 5px -5px var(--box-shadow-color);
     margin-top: 2rem;
 }

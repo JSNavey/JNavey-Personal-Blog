@@ -56,7 +56,7 @@ button {
 .footer-wrapper {
     display: flex;
     justify-content: space-between;
-    width: 75%;
+    width: 65%;
     margin: auto;
     padding-top: 1.5rem;
 }
@@ -74,7 +74,7 @@ button {
 }
 
 .navbar {
-    width: 65%;
+    width: 55%;
     display: flex;
     justify-content: space-between;
     align-items: center;

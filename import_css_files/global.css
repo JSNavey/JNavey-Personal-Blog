@@ -2,9 +2,10 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 
 a {
@@ -35,6 +36,7 @@ ol,
 button {
     font-family: var(--font-family);
     font-size: 1rem;
+    line-height: 1.75;
 }
 
 #container {

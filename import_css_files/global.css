@@ -12,8 +12,9 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    color: black;
+a:visited,
+.nav {
+    color: var(--black);
 }
 
 ul {
@@ -35,7 +36,7 @@ ul,
 ol, 
 button {
     font-family: var(--font-family);
-    font-size: 1rem;
+    font-size: 1em;
     line-height: 1.75;
 }
 
@@ -44,8 +45,9 @@ button {
     width: 100vw;
 }
 
+/*** Nav Bar ***/
 .header {
-    height: 8rem;
+    height: 8em;
     box-shadow: 0 8px 5px -5px var(--box-shadow-color); 
 }
 
@@ -66,7 +68,6 @@ button {
 .header-wrapper-name {
     width: 33%;
 }
-
 
 .blog-name {
     font-size: 2rem;
@@ -112,6 +113,7 @@ transition: 0.5s;
     color: var(--white);
 }
 
+/*** Footer ***/
 .form-input {
     height: 3rem;
     width: 20rem;
@@ -122,4 +124,75 @@ transition: 0.5s;
 .form-input:focus {
     box-shadow: 0 0 10px var(--btn-color);
     outline: var(--btn-color);
+}
+
+/* Media Query for Small Devices */ 
+@media screen and (max-width: 600px) {
+
+    .header {
+        height: 22em;
+    }
+
+    .header-wrapper,
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-wrapper {
+        width: 40em;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-media-logo {
+        margin: auto;
+    }
+
+    .header-wrapper-name {
+        width: auto;
+    }
+    .navbar {
+        height: 12em;
+        margin-top: 1em; 
+    }
+
+    .footer {
+        height: 30em;
+        padding-bottom: 0;
+    }
+
+    .subscription-form {
+        padding-top: 1em;
+    }
+    .subscription-form > h2 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .header {
+        height: 10em;
+    }
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-wrapper-name {
+        width: auto;
+    }
+    
+    .navbar {
+        width: 100%;
+    }
+    
 }

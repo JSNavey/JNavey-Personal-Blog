@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Crimson+Text:wght@400;600&family=Lora:ital,wght@0,400;0,500;1,400&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');
 @import "../import_css_files/variables.css";
 @import "../import_css_files/global.css";
-@import "../import_css_files/responsive_homepage.css";
-@import "../import_css_files/responsive_blogpost.css";
 
 /*** Wrapper Section ***/
 .wrapper {
@@ -226,30 +224,8 @@
     }
 }
 
+/* Media Query for Tablet Devices */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
-    /*
-    .wrapper,
-    .main {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .main-topic,
-    .whats-new {
-        width: 100%;
-        height: fit-content;
-    }
-
-    .main-img-decription {
-        margin-bottom: 2.5em;
-    }
-
-    .card {
-        height: 10em;
-        width: 10em;
-        border: 1px solid red;
-    }*/
-
     .wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

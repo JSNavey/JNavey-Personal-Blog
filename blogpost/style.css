@@ -1,7 +1,5 @@
 @import "../import_css_files/global.css";
 @import "../import_css_files/variables.css";
-@import "../blogpost/style.css";
-
 
 .wrapper {
     display: grid;

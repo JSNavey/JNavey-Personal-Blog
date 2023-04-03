@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Lora:ital,wght@0,400;0,500;1,400&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Crimson+Text:wght@400;600&family=Lora:ital,wght@0,400;0,500;1,400&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');
 @import "../import_css_files/variables.css";
 @import "../import_css_files/global.css";
 @import "../import_css_files/responsive_homepage.css";
@@ -185,3 +185,43 @@
     align-items: center;
 }
 
+/* Media Query for Small Devices */
+@media screen and (max-width: 600px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-topic,
+    .whats-new {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .main-img-decription {
+        margin-bottom: 2.5em;
+        text-align: center;
+    }
+
+    .main-btn {
+        margin:auto;
+    }
+
+    .whats-new-heading{
+        padding-bottom: 1em;
+    }
+    
+    .trending-img {
+        display: none;
+    }
+
+    .trending-list {
+        height: fit-content;
+    }
+}

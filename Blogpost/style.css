@@ -33,6 +33,10 @@
     flex-direction: column;
 }
 
+.heading-content > h2 {
+    font-weight: 400;
+}
+
 .published-info {
     display: flex;
     width: 20em;
@@ -124,6 +128,11 @@
     width: 8em;
     border-radius: 50%;
     margin-right: 5em;;
+}
+
+.company {
+    font-family: var(--anton-font-family);
+    text-transform: uppercase;
 }
 
 
